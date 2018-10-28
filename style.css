@@ -48,10 +48,21 @@ body {
     left: 15px;
     right: 15px;
     bottom: 10px;
-    background: rgba(65, 193, 251, 0.5);
+    background: rgba(59, 189, 249, 0.5);
     border-bottom-right-radius: 150px;
     border-bottom-left-radius: 150px;
     transform-origin: bottom center;
+}
+
+.water:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    background: #25a5e1;
 }
 
 .shadow {
@@ -64,4 +75,9 @@ body {
     background: rgba(0,0,0,0.5);
     z-index: -1;
     border-radius: 50%;
+}
+
+img.shark {
+    width: 120px;
+    animation: animate 5s linear infinite;
 }
