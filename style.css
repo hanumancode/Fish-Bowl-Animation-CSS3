@@ -29,6 +29,19 @@ body {
     border: 4px solid #fff;
     border-radius: 50%;
 }
+
+.fishbowl:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 100px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+
 .water {
 
 }
