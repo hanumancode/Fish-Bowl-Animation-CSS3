@@ -15,7 +15,7 @@ body {
     border-radius: 50%;
     border: 4px solid #fff;
     transform-origin: bottom center;
-    animation: animateBowl 5s linear infinite;
+    animation: animateBowl 12s linear infinite;
 }
 
 /* fishbowl opening */
@@ -38,23 +38,23 @@ body {
     top: 33%;
     left: 35%;
     transform: translate(-50%, -50%);
-    width: 160px;
-    height: 120px;
-    background: rgba(255,255,255,0.03);
+    width: 140px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.02);
     border-radius: 50%;
 }
 
 .water {
     position: absolute;
     top: 50%;
-    left: 15px;
-    right: 15px;
-    bottom: 10px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
     background: rgba(59, 189, 249, 0.5);
     border-bottom-right-radius: 150px;
     border-bottom-left-radius: 150px;
-    transform-origin: bottom center;
-    animation: animateWater 5s linear infinite;
+    transform-origin: top center;
+    animation: animateWater 12s linear infinite;
 }
 
 .water:before {
@@ -73,9 +73,9 @@ body {
     top: calc(50% + 155px);
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 250px;
     height: 30px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
     z-index: -1;
     border-radius: 50%;
 }
@@ -84,10 +84,10 @@ img.shark {
     position: absolute;
     top: 15px;
     width: 100px;
-    animation: animate 6s linear infinite;
+    animation: animateShark 6s linear infinite;
 }
 
-@keyframes animate {
+@keyframes animateShark {
     0% {
         transform: translate(0,0) rotateY(180deg);
     }
