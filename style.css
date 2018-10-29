@@ -17,6 +17,7 @@ body {
     transform-origin: bottom center;
 }
 
+/* fishbowl opening */
 .fishbowl:before {
     content: '';
     position: absolute;
@@ -33,12 +34,12 @@ body {
 .fishbowl:after {
     content: '';
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 33%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 80px;
-    background: rgba(255,255,255,0.05);
+    width: 160px;
+    height: 120px;
+    background: rgba(255,255,255,0.03);
     border-radius: 50%;
 }
 
@@ -52,6 +53,7 @@ body {
     border-bottom-right-radius: 150px;
     border-bottom-left-radius: 150px;
     transform-origin: bottom center;
+    animation: animateWater 5s linear infinite;
 }
 
 .water:before {
@@ -65,7 +67,7 @@ body {
     background: #25a5e1;
 }
 
-.shadow {
+.bowlShadow {
     position: absolute;
     top: calc(50% + 155px);
     left: 50%;
@@ -96,5 +98,24 @@ img.shark {
     }
     100% {
         transform: translate(0,0) rotateY(0deg);
+    }
+}
+
+@keyframes animateWater {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
